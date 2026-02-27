@@ -1,0 +1,56 @@
+ /* Minimalist reset */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica', sans-serif; }
+
+body { background-color: #fdfcfb; color: #4a4a4a; }
+
+header { padding: 30px; background: white; border-bottom: 1px solid #f0f0f0; }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.logo { font-size: 24px; font-weight: 300; letter-spacing: 5px; }
+
+.hero {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.hero-content {
+    background: #e9ecef; /* Placeholder soft grey */
+    padding: 40px;
+    position: relative;
+}
+
+.hero img { width: 100%; max-width: 400px; display: block; margin: 0 auto 20px; }
+
+.hero h1 { font-weight: 300; letter-spacing: 3px; font-size: 2rem; }
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 10%;
+}
+
+.card {
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    transition: opacity 0.3s;
+}
+
+/* The Pastel Palette */
+.pink { background-color: #fce4ec; }
+.green { background-color: #e8f5e9; }
+.blue { background-color: #e3f2fd; }
+
+.card:hover { opacity: 0.8; cursor: pointer; }
